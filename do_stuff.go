@@ -14,7 +14,6 @@ func DoBigQuery(t int) (time.Duration, int) {
 
 	totalSum := 0
 	for i := 0; i < t; i++ {
-		// We're casting this to null because we don't actually need to use it here.
 		returned := DoComplicatedComputeThingy(i, "serial")
 		totalSum += returned
 	}
